@@ -651,9 +651,6 @@ footer {
     height: auto;
   }
 }
-* {
-  border: 1px solid red;
-}
 
 /* CELULARES */
 @media (max-width: 576px) {
