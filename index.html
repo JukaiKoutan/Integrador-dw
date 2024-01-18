@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DESTINO CLOTHING</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/pages/login.html" />
+    <link rel="stylesheet" href="./assets/pages/registro.html" />
+    <link rel="icon" type="image/jpg" href="./assets/iconos/estrella.png" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/iconos/icons8-hardcore-50.png"
+        alt="logo-tienda"
+        class="fotonav"
+      />
+      <nav class="navbar">
+        <label for="abrir-mh"><i class="fa-solid fa-compass"></i></label>
+        <input type="checkbox" id="abrir-mh" />
+
+        <ul class="lista-nav">
+          <li><a href="#hero" class="navbar-links">Home</a></li>
+          <li><a href="#shop" class="navbar-links">Catalogo</a></li>
+          <li><a href="#about" class="navbar-links">Nosotros</a></li>
+        </ul>
+        <label for="abrir-carrito">
+          <img
+            src="./assets/svg/grocery-store.png"
+            alt="carrito-icono"
+            class="logo-carrito"
+          />
+        </label>
+        <input type="checkbox" id="abrir-carrito" />
+        <div class="carrito">
+          <h2>Tu carrito</h2>
+
+          <div class="item-carrito">
+            <img
+              src="./assets/ropa/buzo2.jpg"
+              class="img-carrito"
+              alt="buzocarro"
+            />
+            <div class="items-info">
+              <h3 class="nombre-item">BUZO PALM SPRINGS</h3>
+              <span class="price">$13.999</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="quantity-handler current">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="item-carrito">
+            <img
+              src="./assets/ropa/remera aquas.jpg"
+              class="img-cart"
+              alt="buzocarro"
+            />
+            <div class="items-info">
+              <h3 class="nombre-item">REMERA AQUAS</h3>
+              <span class="price">$3.999</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="quantity-handler current">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="item-carrito">
+            <img
+              src="./assets/ropa/remera oversize negra.jpg"
+              class="img-cart"
+              alt="buzocarro"
+            />
+            <div class="items-info">
+              <h3 class="nombre-item">REMERA OVERSIZE NEGRA</h3>
+              <span class="price">$7.999</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="quantity-handler current">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="total">
+            <p>PRECIO FINAL</p>
+            <span>$14.999</span>
+          </div>
+          <button class="buyBtn">Comprar</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="contenedor">
+          <img
+            src="./assets/ropa/tom-roberts-6WNUb8AV0Z0-unsplash.jpg"
+            alt="portada"
+            class="imagen-hero"
+          />
+          <div class="texto-imagen">
+            <h1>DESTINO CLOTHING</h1>
+            <h2 class="sub-parrafo">Drops unicos, nacieron para vos.</h2>
+            <a href="#shop" class="boton-hero">Explorar Catálogo</a>
+          </div>
+        </div>
+      </section>
+      <div class="titulo-temporada">
+        <p>🔥NEW ARRIVALS🔥</p>
+      </div>
+      <section id="shop">
+        <!-- CATEGORIAS -->
+
+        <div class="categorias">
+          <!-- LA CLASE CATEGORY BUTON ESTA SIN ASIGNAR AUN.-->
+          <button class="category-btn" data-category="all">Todos</button>
+          <button class="category-btn" data-category="remeras">Buzos</button>
+          <button class="category-btn" data-category="buzos">Remeras</button>
+          <button class="category-btn" data-category="pantalones">
+            Pantalones
+          </button>
+        </div>
+        <!-- PRODUCTO BOX -->
+        <div class="item-grid">
+          <div class="item-card" data-category="buzos">
+            <img src="./assets/ropa/buzodontsmoke.jpg" />
+            <h3>BUZO I DONT SMOKE</h3>
+            <p class="precio">$14999.00</p>
+            <button
+              class="buyBtn"
+              data-product="buzo-walls"
+              data-price="14.999"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+
+          <div class="item-card" data-category="buzos">
+            <div class="cards">
+              <img src="./assets/ropa/buzo3.jpg" alt="buzo-1" />
+            </div>
+            <h3>BUZO AMARILLO</h3>
+            <p class="precio">$8999.00</p>
+            <button class="buyBtn" data-product="buzos" data-price="8.999">
+              Agregar al Carrito
+            </button>
+          </div>
+
+          <div class="item-card" data-category="pantalones">
+            <div class="cards">
+              <img
+                src="./assets/ropa/camisa oversize marron.jpg"
+                alt="camisa-1"
+              />
+            </div>
+            <h3>CAMISA OVERSIZE MARRON</h3>
+            <p class="precio">$9999.00</p>
+            <button class="buyBtn" data-product="pants" data-price="9.999">
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="item-card" data-category="remeras">
+            <div class="cards">
+              <img src="./assets/ropa/dontsmokeremera.jpg" alt="remerads" />
+            </div>
+            <h3>REMERA DONT SMOKE</h3>
+            <p class="precio">$8999.00</p>
+            <button class="buyBtn" data-product="remeras" data-price="9.999">
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="item-card" data-category="remeras">
+            <div class="cards">
+              <img
+                src="./assets/ropa/remera oversize negra.jpg"
+                alt="remera-2"
+              />
+            </div>
+            <h3>REMERA OVERSIZE NEGRA</h3>
+            <p class="precio">$7999.00</p>
+            <button class="buyBtn" data-product="remeras" data-price="9.999">
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="item-card" data-category="remeras">
+            <div class="cards">
+              <img src="./assets/ropa/remerafem.jpg" alt="remera-3" />
+            </div>
+            <h3>REMERA TRUE LOVE</h3>
+            <p class="precio">$5999.00</p>
+            <button class="buyBtn" data-product="remeras" data-price="9.999">
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="item-card" data-category="remeras">
+            <div class="cards">
+              <img src="./assets/ropa/remera aquas.jpg" alt="remera-4" />
+            </div>
+            <h3>REMERA AQUAS</h3>
+            <p class="precio">$3999.00</p>
+            <button class="buyBtn" data-product="remeras" data-price="9.999">
+              Agregar al Carrito
+            </button>
+          </div>
+          <div class="item-card" data-category="remeras">
+            <div class="cards">
+              <img src="./assets/ropa/buzo2.jpg" alt="buzo-2" />
+            </div>
+            <h3>BUZO PALM SPRINGS</h3>
+            <p class="precio">$13999.00</p>
+            <button class="buyBtn" data-product="buzos" data-price="9.999">
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT US -->
+      <section id="about">
+        <div class="info-beneficios">
+          <h2 class="beneficios-title">
+            BENEFICIOS EXCLUSIVOS POR SER MIEMBRO
+          </h2>
+          <p>
+            Que quienes somos? Somos una marca Argentina que busca exportar la
+            mayor innovacion al mercado, gracias a nuestros Drops, vas a poder
+            sentir que lo que compraste es para vos, cada stock es limitado y no
+            fabricamos mas de 50 prendas, brindandote asi la exclusividad que
+            mereces.
+          </p>
+          <p>
+            Para que sientas todavia mas esa exclusividad de la que hablamos, te
+            mostramos los beneficios a los que podes acceder creandote una
+            cuenta en el enlace de abajo.
+          </p>
+        </div>
+
+        <div class="beneficios">
+          <div class="contenedor-cards">
+            <div class="card-icon">
+              <img src="./assets/iconos/gran-venta.png" alt="descuento" />
+            </div>
+            <div class="premios">
+              <h3>DESCUENTOS EXCLUSIVOS</h3>
+              <p class="explicacion">
+                Como premio por confiar en nosotros, te regalamos un descuento
+                del <span> 20%</span> en tu primera compra.
+              </p>
+            </div>
+          </div>
+          <div class="contenedor-cards">
+            <div class="card-icon">
+              <img src="./assets/iconos/entrega.png" alt="descuento" />
+            </div>
+            <div class="premios">
+              <h3>ENVIOS GRATIS</h3>
+              <p class="explicacion">
+                Al ser miembro de nuestra comunidad, tenes acceso a envios
+                gratis a todo el pais.
+              </p>
+            </div>
+          </div>
+          <div class="contenedor-cards">
+            <div class="card-icon">
+              <img
+                src="./assets/iconos/correo-electronico.png"
+                alt="descuento"
+              />
+            </div>
+            <div class="premios">
+              <h3>NEWSLETTER VIP</h3>
+              <p class="explicacion">
+                Al registrarte en nuestra pagina, te notificaremos de nuevos
+                Drops y vas a tener acceso a cupones con descuentos exclusivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="login-register">
+          <p>
+            Si te interesa crear una cuenta y acceder a estos increibles
+            beneficios, clickea el boton de "Registrate".
+          </p>
+          <ul class="botonera">
+            <li>
+              <a
+                href="./assets/pages/login.html"
+                target="_blank"
+                class="log-reg"
+                >Ingresa</a
+              >
+            </li>
+            <li>
+              <a
+                href="./assets/pages/registro.html"
+                target="_blank"
+                class="log-reg"
+                >Registrate</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="contenedor-contacto">
+          <div class="info-contacto">
+            <h3 class="titulo-contact">CONTACTO</h3>
+            <p>E-mail: info@destinoclothing.com</p>
+            <p>Teléfono: +54 9 299 1234567</p>
+            <p>Direccion: Avenida Corrientes 640, CABA</p>
+          </div>
+          <div class="redes">
+            <h3 class="titulo-contact">NUESTRAS REDES</h3>
+            <a href="#"
+              ><i class="fa-brands fa-square-instagram"></i>Instagram</a
+            >
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i>Twitter</a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+          </div>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488.17142316771503!2d-58.37692518731265!3d-34.60383788220513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacdb566f91d%3A0x5bab166199c44fcc!2sAv.%20Corrientes%20640%2C%20C1043%20CABA!5e0!3m2!1ses-419!2sar!4v1705353653927!5m2!1ses-419!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!--                FOOTER                     -->
+      <footer>
+        <div class="pagos">
+          <p><i class="fa-brands fa-cc-visa"></i></p>
+          <p class="terminos">
+            Destino Clothing. Todos los derechos reservados.
+          </p>
+          <p><i class="fa-brands fa-cc-mastercard"></i></p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
